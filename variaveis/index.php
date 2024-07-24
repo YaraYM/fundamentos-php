@@ -40,9 +40,73 @@
 
 // Variável de variável
 
-  $x = "nome"; // valor de nome
-  echo "$x <br>"; // nome
+  // $x = "nome"; // valor de nome
+  // echo "$x <br>"; // nome
 
-  $$x = "Ipa"; // var com o nome de x (nome) e valor de Ipa
-  echo "$nome <br>"; // Ipa
+  // $$x = "Ipa"; // var com o nome de x (nome) e valor de Ipa
+  // echo "$nome <br>"; // Ipa
+
+// Variável por referência
+
+  // $x = 10;
+  // $y =& $x;
+
+  // echo $x; // 10
+  // echo "<br>";
+  // echo $y; // 10
+  // echo "<br>";
+
+  // $y = 15;
+
+  // echo $x; // 15
+  // echo "<br>";
+  // echo $y; // 15
+  // echo "<br>";
+
+  // $x = 20;
+
+  // echo $x; // 20
+  // echo "<br>";
+  // echo $y; // 20
+  // echo "<br>";
+
+// Escopo local
+
+  // $x = 10;
+
+  // echo "$x global <br>"; // 10 global
+
+  // function teste() {
+  //   $x = 5;
+  //   echo "$x local <br>";
+  // }
+
+  // teste(); // 5 local
+
+  // echo "$x global <br>"; // 10 global
+
+  // teste(); // 5 local
+
+  // function testando() {
+  //   $x = 12;
+  //   echo "$x local 2 <br>";
+  // }
+
+  // $x = 99;
+
+  // testando(); // 12 local 2
+  // teste(); // 5 local
+  // echo "$x global <br>"; // 99 global
+
+// Escopo global
+
+  $teste = "asd";
+  echo "$teste global 1 <br>"; // asd global 1
+
+  if(true) {
+    $teste = "qwe";
+    echo "$teste if <br>"; // qwe if
+  }
+
+  echo "$teste global 2 <br>"; // qwe global 2
 
