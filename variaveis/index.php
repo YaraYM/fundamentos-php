@@ -100,13 +100,53 @@
 
 // Escopo global
 
-  $teste = "asd";
-  echo "$teste global 1 <br>"; // asd global 1
+  // $teste = "asd";
+  // echo "$teste global 1 <br>"; // asd global 1
 
-  if(true) {
-    $teste = "qwe";
-    echo "$teste if <br>"; // qwe if
+  // if(true) {
+  //   $teste = "qwe";
+  //   echo "$teste if <br>"; // qwe if
+  // }
+
+  // echo "$teste global 2 <br>"; // qwe global 2
+
+// Escopo de static
+
+  // function teste() {
+
+  //   $a = 0;
+  //   $a++;
+
+  //   echo "$a <br>";
+
+  // }
+
+  // teste(); // 1
+  // teste(); // 1
+  // teste(); // 1
+
+  // function testeStatic() {
+
+  //   $a = 0;
+  //   $a++;
+
+  //   echo "$a <br>";
+
+  // }
+
+  // testeStatic(); // 1
+  // testeStatic(); // 2
+  // testeStatic(); // 3
+
+// Parâmetros de função
+
+  function soma($a, $b) {
+
+    echo $a + $b;
+    echo "<br>";
+
   }
 
-  echo "$teste global 2 <br>"; // qwe global 2
-
+  soma(2, 4); // 6
+  soma(6, 8); // 14
+  soma(10, 10); // 20

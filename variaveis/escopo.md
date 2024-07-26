@@ -20,3 +20,16 @@
 - Por comportamento padrão, não são acessíveis dentro de funções.
 - Precisamos usar a palavra global para isso.
 - Essa função da variável global não ser acessível dentro de funções previne muitos problemas sno software.
+
+## Variável Estática
+
+- A variável estática é declarada com a instrução static.
+- O valor da mesma é mantido e alterado a cada execução de uma função.
+- É interessante este comportamento, pois as variáveis de escopo local semrpe são resetadas.
+
+## Parâmetros de função
+
+- Os parâmetros de função também são considerados tipos de variáveis.
+- Este recurso nos ajuda a criar funções com valores dinâmicos.
+- Podemos alterá-los a acada invocação da mesma.
+- Podemos passar mais de um parâmetro para uma função.
