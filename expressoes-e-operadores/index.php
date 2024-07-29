@@ -112,10 +112,73 @@
   // - Crie uma variável saudação, nome e outra de sobrenome.
   // - Imprima com echo a concatenação de saudação, nome e sobrenome.
 
-  $saudacao = "Boa noite, ";
-  $nome = "Tony";
-  $sobrenome = "Corleone";
+  // $saudacao = "Boa noite, ";
+  // $nome = "Tony";
+  // $sobrenome = "Corleone";
 
-  $frase = $saudacao . $nome . " " . $sobrenome;
+  // $frase = $saudacao . $nome . " " . $sobrenome;
 
-  echo $frase;
+  // echo $frase;
+
+// Operador de auto incremento e decremento
+
+  // $x = 0;
+  // $y = 0;
+
+  // $x++;
+  // $y = $y = 1;
+
+  // echo "x: " . $x . "<br>"; // 1
+  // echo "y: " . $y . "<br>"; // 1
+
+  // $n = 10;
+  // $m = 10;
+
+  // $n--;
+  // $m = $m - 1;
+
+  // echo "n: " . $n . "<br>"; // 9
+  // echo "m: " . $m . "<br>"; // 9
+
+  // Operador de igualdade
+
+  // if(3 == 3) {
+  //   echo "Comparação verdadeira <br>";
+  // }
+
+  // $nome = "Tony";
+  // $nomeDoSistema = "Tony";
+
+  // if($nome == $nomeDoSistema) {
+  //   echo "O nome coincide <br>";
+  // }
+
+  // Operador idêntico a 
+
+  // if (3 === "3") {
+  //   echo "Comparação verdadeira <br>";
+  // } else {
+  //   echo "Comparação falsa <br>"; // Comparação falsa
+  // }
+
+  // Operador de diferença
+
+  // $a = 3;
+  // $b = 4;
+
+  // if($a != $b) {
+  //   echo "Os números são diferentes <br>";
+  // }
+
+  // Operador não idêntico a
+
+  $a = 1;
+  $b = "1";
+
+  if($a !== $b) {
+    echo "Os números são diferentes <br>";
+  }
+
+  if(1 !== 2) {
+    echo "Os números são diferentes <br>";
+  }
