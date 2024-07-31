@@ -19,7 +19,9 @@
 - Símbolo: ||
 - Ex.: 5 > 15 || "teste" == "teste" # true
 
+## Operador lógico NOT
 
-f t = v
-f v = v
-f v = v
+- O operador lógico NOT apenas inverte o resultado booleano de uma operação; se é true vira false e se é false vira true.
+- Símbolo: !
+- Exemplo: !true # false
+- Exemplo: !(5 > 2) # false

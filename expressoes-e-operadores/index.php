@@ -172,13 +172,47 @@
 
   // Operador não idêntico a
 
-  $a = 1;
-  $b = "1";
+  // $a = 1;
+  // $b = "1";
 
-  if($a !== $b) {
-    echo "Os números são diferentes <br>";
-  }
+  // if($a !== $b) {
+  //   echo "Os números são diferentes <br>";
+  // }
 
-  if(1 !== 2) {
-    echo "Os números são diferentes <br>";
-  }
+  // if(1 !== 2) {
+  //   echo "Os números são diferentes <br>";
+  // }
+
+// Operadores de Atribuição
+
+  // +=
+  // $a = 0;
+  // $a += 10; // $a = $a + 10
+  // echo $a . "<br>"; // 10
+
+  // // -=
+  // $b = 0;
+  // $b -= 5; // $b = $b - 5
+  // echo $b . "<br>"; // -5
+
+  // // *=
+  // $c = 5;
+  // $c *= 2; // $c = $c * 2
+  // echo $c . "<br>"; // 10
+
+  // // /=
+  // $d = 10;
+  // $d /= 2; // $d = $d / 2
+  // echo $d . "<br>"; // 5
+
+  // // %=
+  // $e = 10;
+  // $e %= 3; // $e = $e % 3
+  // echo $e . "<br>"; // 1
+
+// Operador Ternário
+
+  $a = 10;
+  $b = 20;
+
+  echo $a > $b ? "A é maior que B" : "B é maior que A";
