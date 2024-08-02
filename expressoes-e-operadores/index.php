@@ -212,7 +212,9 @@
 
 // Operador Ternário
 
-  $a = 10;
-  $b = 20;
+  // $a = 10;
+  // $b = 20;
 
-  echo $a > $b ? "A é maior que B" : "B é maior que A";
+  // echo $a > $b ? "A é maior que B" : "B é maior que A";
+
+  
