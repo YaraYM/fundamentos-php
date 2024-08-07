@@ -231,11 +231,38 @@
   // - Dica: você pode utilizar o método array_push(arr, elemento) para inserir um elemento em um array
   // - Imprima o array criado com print_r
 
-  $arr = [];
+  // $arr = [];
 
-  for($i = 1; $i <= 10; $i++) {
-    array_push($arr, $i);
+  // for($i = 1; $i <= 10; $i++) {
+  //   array_push($arr, $i);
+  // }
+
+  // print_r($arr); // Array ( [0] => 1 [1] => 2 [2] => 3 [3] => 4 [4] => 5 [5] => 6 [6] => 7 [7] => 8 [8] => 9 [9] => 10 )
+
+  // Exercício 30c
+
+  // - Crie um array de 10 a 20 com for
+  // - Faça um loop em cima do array criado dinamicamente
+  // - Imprima apenas os valores ímpares
+
+  // $arr = [];
+
+  // for($i = 10; $i <= 20; $i++) {
+  //   array_push($arr, $i);
+  // }
+
+  // print_r($arr);
+
+  // for($i = 0; $i < count($arr); $i++) {
+  //   if($arr[$i] % 2 != 0) {
+  //     echo "Elemento: $arr[$i] <br>";
+  //   }
+  // }
+
+// Foreach
+
+  $nomes = ["Matheus", "João", "Maria", "José"];
+
+  foreach($nomes as $nome) {
+    echo "Nome: $nome <br>";
   }
-
-  print_r($arr); // Array ( [0] => 1 [1] => 2 [2] => 3 [3] => 4 [4] => 5 [5] => 6 [6] => 7 [7] => 8 [8] => 9 [9] => 10 )
-
