@@ -13,3 +13,13 @@
 - Algumas  funções exigem parâmetros
 - O ato de chamar uma função também é conhecido como invocar
 - O PHP tem diversas funções para utilizarmos no nosso código, por exemplo: strleen, strtoupper, strolower, print_r, var_dump
+
+# Parâmetros de função
+
+- Podemos passar parâmetros para a função
+- Estes parâmetros são como variáveis que são utilizadas dentro da função para moldar a sua execução
+- Não há número máximo de parâmetros
+- Exemplo:
+            function(param1, param2) {
+              // código
+            }
