@@ -23,3 +23,18 @@
             function(param1, param2) {
               // código
             }
+
+# Retorno de funções
+
+- Normalmente, funções retornam algo; para isso, utilizamos a instrução return
+- O objetivo é armazenar o valor de retorno em uma variável e utilizá-lo posteriormente no código
+- Exemplo:
+            function x(a, b) {
+              return algumaCoisa;
+            }
+
+# Relembrando escopo e funções
+
+- Nas funções temos um escopo específico chamado de local, onde as suas variáveis são exclusivamente delas
+- Podemos utilizar as variáveis globais com a instrução global
+- Além disso, há o static, onde podemos manter um valor após a execução de uma função, o que normalmente é resetado

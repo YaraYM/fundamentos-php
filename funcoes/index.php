@@ -75,9 +75,74 @@
   // - Ela deve receber um parâmetro de nome e idade
   // - Imprima "Olá, eu sou o NOME e tenho IDADE anos"
 
-  function apresentacao($nome, $idade) {
+  // function apresentacao($nome, $idade) {
 
-    echo "Olá, eu sou o $nome e tenho $idade anos <br>";
+  //   echo "Olá, eu sou o $nome e tenho $idade anos <br>";
+  // }
+
+  // apresentacao("João", 25); // Olá, eu sou o João e tenho 25 anos
+
+  // Exercício 34
+
+  // - Crie uma função que verifica se um número é par ou ímpar
+  // - Se for par, imprima uma mensagem
+  // - Se for ímpar, imprima outra mensagem
+
+  // function parOuImpar($numero) {
+  //   if ($numero % 2 == 0) {
+  //     echo "O número $numero é par <br>";
+  //   } else {
+  //     echo "O número $numero é ímpar <br>";
+  //   }
+  // }
+
+  // parOuImpar(5); // ímpar
+  // parOuImpar(10); // par
+
+  // Exercício 35
+
+  // - Crie uma função que recebe um número
+  // - Retorne o valor deste número ao quadrado
+
+  // function quadrado($numero) {
+  //   $resultado = $numero ** 2;
+  //   return $resultado;
+  // } 
+
+  // echo quadrado(5) . "<br>"; // 25
+  // $num = quadrado(10);
+  // echo $num . "<br>"; // 100
+  // $x = quadrado(3);
+  // echo $x . "<br>"; // 9
+
+  // Exercício 36
+
+  // - Crie uma função que recebe um array de números
+  // - Crie um novo array com apenas os números que são maiores que 7
+  // - Retorne este novo array e imprima na tela
+  
+  $arr = [];
+
+  for($i = 0; $i <= 30; $i++) {
+    array_push($arr, $i);
   }
 
-  apresentacao("João", 25); // Olá, eu sou o João e tenho 25 anos
+  // print_r($arr);
+  
+  function arrayMaiorQueSete($array) {
+      $novoArray = [];
+  
+      for($j = 0; $j < count($array); $j++) {
+  
+          if ($array[$j] > 7) {
+              array_push($novoArray, $array[$j]);
+          }
+  
+      }
+
+      return $novoArray;
+  }
+
+  $novoArray = arrayMaiorQueSete($arr);
+
+  print_r($novoArray);
