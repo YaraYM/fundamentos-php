@@ -159,6 +159,42 @@
             print_r($fraseArray); // Array ( [0] => Testando [1] => o [2] => explode )
             echo "<br>"; 
             $frase2 = "Carro, Avião, Barco, Navio";
-            $frase2Array = explode(",", $frase);
+            $frase2Array = explode(",", $frase2);
             print_r($frase2Array); // // Array ( [0] => Carro [1] => Avião [2] => Barco [3] => Navio )
             echo "<br>";
+
+            for($i = 0; $i < count($frase2); $i++) {
+              echo "$frase2Array[$i] <br>";
+            }
+            Carro
+            Avião
+            Barco
+            Navio
+
+# Array para string
+
+- Podemos converter um array em string com a função implode
+- Passamos primeiro o separador como argumento, depois a string que vai ser convertida
+- Exemplo: 
+            $arr = ["Maçã", "Pera", "Mamão", "Batata"];
+            $str = implode(", ", $arr);
+            echo "$str <br>"; // Maçã, Pera, Mamão, Batata
+            $arr2 = ["Avião", "Tanque", "Jipe", "Metralhadora"];
+            $str2 = implode(" <-> ", $arr2);
+            echo "$str2 <br>";
+
+# Encontrando a primeira ocorrência
+
+- Com a função strpos, podemos encontrar algum texto na string
+- Se recebermos algum valor significa que o texto foi encontrado, e este valor é o índice inicial
+- Se for retornado false, o texto não está na string
+- Exemplo:
+            $str = "Estamos testando o método strpos, com o strops podemos encontrar strings";
+            $testeEncontrar = strpos($str, "strpos");
+            echo "$testeEncontrar <br>"; // 27
+            $testeEncontrar2 = strpos($str, "Java");
+            echo "$testeEncontrar2 <br>"; // 
+
+# Encontrando a última ocorrência
+
+- 

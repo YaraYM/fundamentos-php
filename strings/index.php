@@ -63,7 +63,7 @@
 
   // echo "O número de letras 'a' é: $contadorDeAs"; // 4
 
-// Exercício 41
+  // Exercício 41
 
   // - Transforme a string "este item está em promoção" em "Este item está em PROMOÇÃO"
   // - Observação: você pode separar as strings, mas não pode escrever em caixa alta ou baixa manualmante, só com funções
@@ -76,7 +76,7 @@
 
   // echo ucfirst($str) . strtoupper($promo); // Este item está em PROMOÇÃO
 
-// Exercício 42
+  // Exercício 42
 
   // - Na frase "Cadê meu queijo? Ele estava aqui em cima
   // - Resgate a palavra 'queijo'
@@ -87,5 +87,34 @@
   // echo $queijo . "<br>"; // queijo
   // $estava = substr($frase, 24, 6);
   // echo $estava; // estava
+
+  // Exercício 43
+
+  // - Converta a seguinte string para array:
+  //   carro-navio-helicóptero-barco-jangada
+
+  $str = "carro-navio-helicóptero-barco-jangada";
+  $arr = explode("-", $str);
+  
+  for($i = 0; $i < count($arr); $i++) {
+    echo "Item: $arr[$i] . <br>";
+  }
+  // Item: carro
+  // Item: navio
+  // Item: helicóptero
+  // Item: barco
+  // Item: jangada
+
+  // Exercício 44
+
+  // - Converta a seguinte array para uma string:
+  //   ["O", "PHP", "é", "muito", "legal"]
+
+  $arr = ["O", "PHP", "é", "muito", "legal"];
+  $str = implode(" ", $arr);
+  echo "$str <br>"; // O PHP é muito legal
+
+
+
 
   
