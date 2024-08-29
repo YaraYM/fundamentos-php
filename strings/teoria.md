@@ -197,4 +197,38 @@
 
 # Encontrando a última ocorrência
 
-- 
+- Com a função strrpos, podemos encontrar a última ocorrência de um texto na string
+- Se recebermos algum valor significa que o texto foi encontrado, e este valor é o índice inicial
+- Se for retornado false, o texto não está na string
+- Exemplo:
+            $str = "Testando encontrando palavra teste, em uma string que tem teste";
+            $palavra = strrpos($str, "teste");
+            echo "$palavra <br>"; // 57
+
+# Retornando o resto da string
+
+- Com a função strstr, podemos encontrar um texto em uma string
+- Se algo for encontrado, a função vai retornar o resto da string após o texto encontrado
+- Se não encontrar nada, retorna false
+- Exemplo:
+            $str = "Testando o resto da string pra ver se dá certo";
+            $resto = strstr($str, "resto");
+            echo "$resto <br>"; // resto da string pra ver se dá certo
+            
+# Decompor uma URL
+
+- Com a função parse_url, podemos decompor uma URL
+- Vamos receber um array com todas as partes que a URL tem
+- Alguns elementos que podem ser retornados são: protocolo, host, parâmetros
+- Exemplo:
+            $url = "https://www.google.com";
+            $arrayUrl = parse_url($url);
+            print_r($arrayUrl); // Array ([scheme] => https [host] => www.google.com)
+            echo "<br>";
+            echo $arrayUrl["host"]; // www.google.com
+            echo "<br>";
+            $url2 = "http://www.horadecodar.com.br/?busca=php";
+            $arrayUrl2 = parse_url($url2); 
+            print_r($arrayUrl2); // Array ([scheme] => http [host] => www.horadecodar.com.br [path] => /[query] => busca=php)
+            echo "<br>";
+
