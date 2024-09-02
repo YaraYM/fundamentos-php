@@ -1,0 +1,17 @@
+<?php
+
+  $arr = ['banana', 'maçã', 'batata', 'pêra', 'mamão'];
+
+  if(in_array('batata', $arr)) {
+    echo "A batata está no array";
+  } else {
+    echo "A batata não está no array";
+  }
+
+  $b = 'banana';
+
+  if(in_array($b, $arr)) {
+    echo "A $b está no array";
+  } else {
+    echo "A $b não está no array";
+  }
