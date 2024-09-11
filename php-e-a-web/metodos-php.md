@@ -1,0 +1,11 @@
+# Métodos HTTP
+
+- As requisições que envaimos também contêm métodos
+- Alguns deles são:
+  GET > Solicita a apresentação de um recurso (ex.: visualização de uma página)
+  POST > Envio de dados ao servidor (ex.: cadastro de usuário)
+  PUT > Atualização de dados
+  DELETE > Remoção de dados
+  PATCH > Atualização de dado específico
+
+  
