@@ -1,0 +1,13 @@
+<?php
+
+  print_r($_SERVER); // Array ([MIBDIRS] => C:/xampp/php/extras/mibs [MYSQL_HOME] => \xampp\mysql\bin [OPENSSL_CONF] => C:/xampp/apache/bin/openssl.cnf [PHP_PEAR_SYSCONF_DIR] => \xampp\php [PHPRC] => \xampp\php [TMP] => \xampp\tmp [HTTP_HOST] => localhost [HTTP_CONNECTION] => keep-alive [HTTP_CACHE_CONTROL] => max-age=0 [HTTP_UPGRADE_INSECURE_REQUESTS] => 1 [HTTP_USER_AGENT] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 [HTTP_ACCEPT] => text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8 [HTTP_ACCEPT_ENCODING] => gzip, deflate, sdch, br [HTTP_ACCEPT_LANGUAGE] => pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4 [HTTP_COOKIE] => PHPSESSID=3b5 ... [PATH] => C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\ManagementStudio\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\ManagementStudio\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\ManagementStudio\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\ManagementStudio\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files\Microsoft SQL Server\130 
+
+  echo "<br>";
+
+  echo $_SERVER['MYSQL_HOME'] . "<br>"; // \xampp\mysql\bin
+
+  if($_SERVER['SERVER_NAME'] == 'localhost') {
+    echo "Estamos no servidor local";
+  } else {
+    echo "Estamos em um servidor remoto";
+  }
