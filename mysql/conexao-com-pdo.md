@@ -4,4 +4,9 @@
 - Exemplo:
             $conn = new PDO("mysql:host=localhost;dbname=teste", $user, $pass);
 
-            
+            $host = "localhost";
+            $db = "cursophp";
+            $user = "root";
+            $pass = "";
+
+            $conn = new PDO("mysql:host=$host;dbname=$db", $user, $pass);
